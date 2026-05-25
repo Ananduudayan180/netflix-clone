@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/core/constants/app_str.dart';
 import 'package:netflix_clone/core/widgets/custom_appbar.dart';
+import 'package:netflix_clone/features/downloads/presentation/widgets/downloads_image_section.dart';
 import 'package:netflix_clone/features/downloads/presentation/widgets/downloads_string_section.dart';
 
 class DownloadsScreen extends StatelessWidget {
@@ -22,6 +23,8 @@ class DownloadsScreen extends StatelessWidget {
             CustomAppbar(title: AppStr.downloads, onPressed: () {}),
             SizedBox(height: size.height * .02),
             const DownloadsStringsSection(),
+            SizedBox(height: size.height * .01),
+            DownloadsImageSection(images: images),
           ],
         ),
       ),
