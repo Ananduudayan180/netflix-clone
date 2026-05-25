@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/core/constants/app_str.dart';
 import 'package:netflix_clone/core/widgets/custom_appbar.dart';
+import 'package:netflix_clone/features/downloads/presentation/widgets/downloads_string_section.dart';
 
 class DownloadsScreen extends StatelessWidget {
   const DownloadsScreen({super.key});
@@ -11,6 +12,7 @@ class DownloadsScreen extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -18,6 +20,8 @@ class DownloadsScreen extends StatelessWidget {
           children: [
             //AppBar
             CustomAppbar(title: AppStr.downloads, onPressed: () {}),
+            SizedBox(height: size.height * .02),
+            const DownloadsStringsSection(),
           ],
         ),
       ),
