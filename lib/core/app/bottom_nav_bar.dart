@@ -19,7 +19,7 @@ class BottomNavBar extends StatelessWidget {
         size.width > AppBreakpoints.mobile &&
         size.width < AppBreakpoints.tablet;
     return SizedBox(
-      height: 90,
+      height: isMobile ? 58 : 90,
       child: Align(
         alignment: isMobile ? Alignment.bottomCenter : Alignment.center,
         child: ClipRRect(
