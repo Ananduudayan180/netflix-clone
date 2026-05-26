@@ -7,4 +7,10 @@ class AppStr {
       "We'll download apersonalised selection of\n movies and shows for you, so there's\n always something to watch on your\n device.";
   static const String setUpButton = 'Set Up';
   static const String seeDowloadsButton = 'See What You Can Download';
+
+  //fast laughs section
+  static const String lol = 'Lol';
+  static const String myList = 'My List';
+  static const String share = 'Share';
+  static const String play = 'Play';
 }

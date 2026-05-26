@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/features/fast_laughs/presentation/widgets/action_widget.dart';
 import 'package:netflix_clone/features/fast_laughs/presentation/widgets/page_view_builder.dart';
 
 class FastLaughsScreen extends StatelessWidget {
@@ -14,7 +15,12 @@ class FastLaughsScreen extends StatelessWidget {
     return Center(
       child: AspectRatio(
         aspectRatio: 9 / 16,
-        child: Stack(children: [PageViewBuilder(image: images[0])]),
+        child: Stack(
+          children: [
+            PageViewBuilder(image: images[0]),
+            ActionWidget(accountImage: images[0]),
+          ],
+        ),
       ),
     );
   }
