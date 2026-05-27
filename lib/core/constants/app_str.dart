@@ -13,4 +13,7 @@ class AppStr {
   static const String myList = 'My List';
   static const String share = 'Share';
   static const String play = 'Play';
+  //search
+  static const String topSearches = 'Top Searches';
+  static const String search = 'Search';
 }
