@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/core/constants/app_str.dart';
-import 'package:netflix_clone/features/search/presentation/widgets/search_movies_list.dart';
 import 'package:netflix_clone/features/search/presentation/widgets/search_textfield.dart';
+import 'package:netflix_clone/features/search/presentation/widgets/top_searches_list.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -23,7 +23,8 @@ class SearchScreen extends StatelessWidget {
           SizedBox(height: 10),
           Text(AppStr.topSearches, style: headlineSmall),
           SizedBox(height: 10),
-          SearchMoviesList(images: images),
+          //SearchMoviesList(images: images),
+          TopSearchesList(),
         ],
       ),
     );
