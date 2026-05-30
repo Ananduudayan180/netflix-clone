@@ -16,4 +16,10 @@ class AppStr {
   //search
   static const String topSearches = 'Top Searches';
   static const String search = 'Search';
+  //home
+  static const String info = 'Info';
+  static const String add = 'Add';
+  static const String tvShows = 'Tv Shows';
+  static const String movies = 'Movies';
+  static const String categories = 'Categories';
 }

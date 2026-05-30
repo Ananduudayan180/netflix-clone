@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/features/home/presentation/screens/home_card.dart';
 import 'package:netflix_clone/features/home/presentation/widgets/home_movie_list.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,11 +14,17 @@ class HomeScreen extends StatelessWidget {
     'https://image.tmdb.org/t/p/w600_and_h900_face/1yLZ7kExd0UGGbaZW4LxmYD4OIf.jpg',
   ];
 
+  static final List<String> imageUrl3 = [
+    'https://image.tmdb.org/t/p/w600_and_h900_face/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
+  ];
+
   @override
   Widget build(BuildContext context) {
+    // final size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(
         children: [
+          HomeCard(image: imageUrl3[0]),
           HomeMovieList(images: imageUrl1, title: 'Released in the Past Year'),
           HomeMovieList(images: imageUrl1, title: 'Trending Now'),
           HomeMovieList(
