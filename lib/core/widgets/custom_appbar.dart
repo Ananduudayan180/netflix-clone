@@ -14,7 +14,7 @@ class CustomAppbar extends StatelessWidget {
         //1st
         title != null
             ? Text(title!, style: headlineMedium)
-            : Image.asset(AppImageUrl.appLogo, height: 40),
+            : Image.asset(AppImageUrl.appLogo, height: 37),
         Spacer(),
         //2nd
         IconButton(onPressed: onPressed, icon: Icon(Icons.cast)),

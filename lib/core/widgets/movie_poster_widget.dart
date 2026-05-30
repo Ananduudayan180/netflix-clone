@@ -4,10 +4,12 @@ import 'package:netflix_clone/core/theme/app_colors.dart';
 class MoviePosterWidget extends StatelessWidget {
   final String image;
   final double aspectRatio;
+  final double borderRadius;
   const MoviePosterWidget({
     super.key,
     required this.image,
     this.aspectRatio = 2 / 3,
+    this.borderRadius = 7,
   });
 
   @override
@@ -17,7 +19,7 @@ class MoviePosterWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: AppColors.surface,
-          borderRadius: BorderRadius.circular(7),
+          borderRadius: BorderRadius.circular(borderRadius),
           image: DecorationImage(fit: BoxFit.cover, image: NetworkImage(image)),
         ),
       ),
