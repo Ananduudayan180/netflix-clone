@@ -7,4 +7,5 @@ class AppColors {
   static const surface = Colors.white10;
   static const greyText = Colors.grey;
   static const blackText = Colors.black;
+  static const transparent = Colors.transparent;
 }

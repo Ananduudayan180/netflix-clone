@@ -22,4 +22,9 @@ class AppStr {
   static const String tvShows = 'Tv Shows';
   static const String movies = 'Movies';
   static const String categories = 'Categories';
+  // 'New & Hot'
+  static const String newAndHot = 'New & Hot';
+  static const String commingSoon = '🍿 Coming Soon';
+  static const String evWatching = "👀 Everyone's Watching";
+  static const String remindMe = 'Remind Me';
 }
