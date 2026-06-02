@@ -3,7 +3,7 @@ import 'package:netflix_clone/core/constants/app_breakpoints.dart';
 import 'package:netflix_clone/core/constants/app_str.dart';
 import 'package:netflix_clone/core/theme/app_colors.dart';
 import 'package:netflix_clone/core/widgets/custom_appbar.dart';
-import 'package:netflix_clone/features/new_and_hot/presentation/screens/coming_soon_movie_list.dart';
+import 'package:netflix_clone/features/new_and_hot/presentation/screens/coming_soon_list.dart';
 
 class NewAndHotScreen extends StatelessWidget {
   const NewAndHotScreen({super.key});
@@ -41,7 +41,9 @@ class NewAndHotScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: TabBarView(children: [ComingSoonMovieList(), Text('hello')]),
+            child: TabBarView(
+              children: [ComingSoonList()],
+            ),
           ),
         ],
       ),

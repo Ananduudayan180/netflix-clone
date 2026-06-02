@@ -5,8 +5,8 @@ import 'package:netflix_clone/core/theme/app_colors.dart';
 import 'package:netflix_clone/features/new_and_hot/presentation/widgets/coming_soon_movie_details.dart';
 import 'package:netflix_clone/features/new_and_hot/presentation/widgets/movie_trailer_widget.dart';
 
-class ComingSoonMovieList extends StatelessWidget {
-  const ComingSoonMovieList({super.key});
+class ComingSoonList extends StatelessWidget {
+  const ComingSoonList({super.key});
 
   static const String image =
       'https://media.themoviedb.org/t/p/w533_and_h300_face/sb76azrAXr9U13uEQxNP5e3fujY.jpg';
