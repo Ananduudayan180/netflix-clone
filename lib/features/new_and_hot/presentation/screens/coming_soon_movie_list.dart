@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix_clone/core/constants/app_breakpoints.dart';
 import 'package:netflix_clone/core/theme/app_colors.dart';
 import 'package:netflix_clone/features/new_and_hot/presentation/widgets/coming_soon_movie_details.dart';
-import 'package:netflix_clone/features/new_and_hot/presentation/widgets/coming_soon_movie_image.dart';
+import 'package:netflix_clone/features/new_and_hot/presentation/widgets/movie_trailer_widget.dart';
 
 class ComingSoonMovieList extends StatelessWidget {
   const ComingSoonMovieList({super.key});
@@ -29,7 +29,7 @@ class ComingSoonMovieList extends StatelessWidget {
                   spacing: 20,
                   runSpacing: 16,
                   children: [
-                    ComingSoonMovieImage(image: image),
+                    MovieTrailerWidget(image: image),
                     ComingSoonMovieDetails(),
                   ],
                 ),
