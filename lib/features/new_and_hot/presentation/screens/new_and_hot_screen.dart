@@ -4,6 +4,7 @@ import 'package:netflix_clone/core/constants/app_str.dart';
 import 'package:netflix_clone/core/theme/app_colors.dart';
 import 'package:netflix_clone/core/widgets/custom_appbar.dart';
 import 'package:netflix_clone/features/new_and_hot/presentation/screens/coming_soon_list.dart';
+import 'package:netflix_clone/features/new_and_hot/presentation/screens/everyones_watching_list.dart';
 
 class NewAndHotScreen extends StatelessWidget {
   const NewAndHotScreen({super.key});
@@ -42,7 +43,7 @@ class NewAndHotScreen extends StatelessWidget {
           ),
           Expanded(
             child: TabBarView(
-              children: [ComingSoonList()],
+              children: [ComingSoonList(), EveryonesWatchingList()],
             ),
           ),
         ],
