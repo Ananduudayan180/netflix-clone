@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/core/app/app_scaffold.dart';
+import 'package:netflix_clone/core/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Netflix Clone',
+      theme: appTheme,
       home: AppScaffold(),
     );
   }
