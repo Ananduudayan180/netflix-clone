@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/core/app/app_scaffold.dart';
+import 'package:netflix_clone/core/config/api_service.dart';
 import 'package:netflix_clone/core/theme/app_theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  ApiService.setupDio(); 
 }
 
 class MyApp extends StatelessWidget {
